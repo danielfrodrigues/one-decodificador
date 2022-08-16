@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <title>Decodificador de textos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <main>
+    <section class="logo">
+      <img src="imagens/logo_alura.svg" alt="Logo do Decodificador de Textos">
+    </section>
+    
+    <section class="input">
+      <textarea
+        model="input"
+        placeholder="Digite seu texto" id="mensagem"></textarea>
+        <div class="lista-erros"></div>
+
+      <div class="information">
+        <img src="imagens/icon_exclamacao.svg" alt="Apenas letras minúsculas e sem acento.">
+        <span>Apenas letras minúsculas e sem acento..</span>
+      </div>
+
+      <div class="actions">
+        <button id="codificar" class="botao-div">Codificar</button>
+        <button id="decodificar">Decodificar</button>
+        <button id="copiar">Copiar</button>
+        <button id="escutar">Escutar</button>
+      </div>
+    </section>
+
+    <section class="output">
+      <div>
+        <div>
+          <textarea name="" id="resultado"></textarea>
+        </div> 
+        <div id="div-alterar">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_pghdouhq.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
+          <h2>Digite um texto que você gostaria de codificar</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts.js" type="module"></script>
+</body>
+</html>
